@@ -5,11 +5,11 @@ Imports System.IO
 
 Module Program
     Sub Main(args As String())
-        File.AppendAllText("C:\path\to\your\log\file.txt", "This is the value to log.")
+        File.AppendAllText("C:\path\to\your\log\file.txt", "This is the value to log."& vbCrLf)
     End Sub
 End Module
 
 
 简单直接引入 Imports System.IO
 然后直接使用下面语句即可输出log
-File.AppendAllText("C:\path\to\your\log\file.txt", "This is the value to log.")
+File.AppendAllText("C:\path\to\your\log\file.txt", "This is the value to log." & vbCrLf )
